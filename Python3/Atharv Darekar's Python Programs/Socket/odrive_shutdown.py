@@ -29,3 +29,5 @@ try:
 except Exception as e:
     print("Failed to connect odriveagent");
 socket.sendall((json.dumps({'command': 'shutdown','parameters': {}})+'\n').encode('utf-8'));
+
+# Exception in thread HeartbeatControllerStop (most likely raised during interpreter shutdown)
