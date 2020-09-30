@@ -1,0 +1,6 @@
+Example Of Syntax Error.............,
+The Java Statement,   
+c equals a plus b divided by 2,
+has a syntax error because every Java statement should terminate with semi colon, so the correct form is,
+c equals a plus b divided by 2 semi colon,
+All syntax errors must be found and corrected. Otherwise, the program will not execute. 

@@ -1,0 +1,48 @@
+<html>
+	<script language="javascript">
+		function f1()
+			{
+				document.bgColor="red";
+				window.setTimeout("f2()",1000);
+			}
+		function f2()
+			{
+				document.bgColor="blue";
+				window.setTimeout("f3()",1000);
+			}
+		function f3()
+			{
+				document.bgColor="green";
+				window.setTimeout("f4()",1000);
+			}
+		function f4()
+			{
+				document.bgColor="yellow";
+				window.setTimeout("f5()",1000);
+			}
+		function f5()
+			{
+				document.bgColor="orange";
+				window.setTimeout("f6()",1000);
+			}
+		function f6()
+			{
+				document.bgColor="purple";
+				window.setTimeout("f7()",1000);
+			}
+		function f7()
+			{
+				document.bgColor="brown";
+				window.setTimeout("f1()",1000);
+			}
+		function msg()
+			{
+				alert("Display of 7 distinct colours page");
+			}
+	</script>
+	<body onload="f1()">
+		<center>
+			<marquee><input type="button" name="msg" value="Display of 7 different colors" onMouseOver="msg()"></marquee>
+		</center>
+	</body>
+</html>

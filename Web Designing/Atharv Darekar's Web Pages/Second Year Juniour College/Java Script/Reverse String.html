@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Revrse String</title>
+		<script language="javascript">
+		function reverse(in)
+			{
+				var l,i;
+				l=in.length;
+				var inarray=new Array(l);
+				for(i=0;i<l;i++)
+					inarray[i]=in.charAt(i);
+				document.write("The reverse of word is <br>");
+				for(i=l;i>0;i--)
+					document.write(inarray[i]);
+			}
+		</script>
+	</head>
+	<body>
+		<form name="Form">
+			<h3>Enter a word:</h3><input type="text" name="word" size="20"><br>
+			<input type="button" value="Enter"  onClick="reverse(Form.word.value)"><br>
+		</form>
+	</body>
+</html>

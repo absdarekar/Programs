@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=pn\ row\ colomn
+comment0.target=double\ period(int,\ int,\ int)
+comment1.params=gn\ colomn
+comment1.target=double\ group(int,\ int)
+comment2.params=Z
+comment2.target=double\ AtomicMassGroup(double)
+numComments=3

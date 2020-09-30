@@ -1,0 +1,2 @@
+A logical error......,
+A logical error, is an error in planning the program logic. The Computer actually does not know that an error has been made. It follows the program instructions and executes the result, but the output may not be correct. The problem is that the logic being followed does not produce the desired results.

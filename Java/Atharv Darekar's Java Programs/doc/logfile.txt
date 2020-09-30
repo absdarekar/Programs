@@ -1,0 +1,101 @@
+Project documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_05\bin\javadoc.exe
+-sourcepath
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs
+-d
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\doc
+-encoding
+windows-1252
+-charset
+windows-1252
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+-doctitle
+Atharv Darekar's Java Programs
+-windowtitle
+Atharv Darekar's Java Programs
+-author
+-version
+-nodeprecated
+-package
+-link
+http://download.oracle.com/javase/6/docs/api/
+Incomplete
+Pattern
+InputMethods
+Miscellaneous
+Operators
+StringBufferManipulation
+Constructor
+StringManipulation
+ExceptionHandling
+Convertions
+Mathematics
+Atharv
+Atharv.TrignometricalFunctions
+Array
+Geometry
+NumberType
+Character_Manipulation
+ScienceAndTechnology
+WrapperClass
+Important_Programs
+<---- end of javadoc command ---->
+Loading source files for package Incomplete...
+Loading source files for package Pattern...
+Loading source files for package InputMethods...
+Loading source files for package Miscellaneous...
+Loading source files for package Operators...
+Loading source files for package StringBufferManipulation...
+Loading source files for package Constructor...
+Loading source files for package StringManipulation...
+Loading source files for package ExceptionHandling...
+Loading source files for package Convertions...
+Loading source files for package Mathematics...
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:10: error: illegal character: '\u00a6'
+		double a,b=0,x,y,æ,ß;
+		                  ^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:10: error: not a statement
+		double a,b=0,x,y,æ,ß;
+		                    ^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:15: error: illegal character: '\u00a6'
+		æ = (-4 * x + (Math.sqrt((16 * x * x) + (16 * y * y)))) / 8;
+		 ^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:15: error: not a statement
+		æ = (-4 * x + (Math.sqrt((16 * x * x) + (16 * y * y)))) / 8;
+		^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:15: error: not a statement
+		æ = (-4 * x + (Math.sqrt((16 * x * x) + (16 * y * y)))) / 8;
+		             ^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:15: error: ';' expected
+		æ = (-4 * x + (Math.sqrt((16 * x * x) + (16 * y * y)))) / 8;
+		                                                       ^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:17: error: illegal character: '\u00a6'
+		if (æ > 0)
+		     ^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:17: error: not a statement
+		if (æ > 0)
+		       ^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:17: error: ';' expected
+		if (æ > 0)
+		          ^
+G:\Atharv\Academics\Computer\Java\Atharv Darekar's Java Programs\Mathematics\RootsOfComplexNumber.java:19: error: 'else' without 'if'
+		else
+		^
+Loading source files for package Atharv...
+Loading source files for package Atharv.TrignometricalFunctions...
+Loading source files for package Array...
+Loading source files for package Geometry...
+Loading source files for package NumberType...
+Loading source files for package Character_Manipulation...
+Loading source files for package ScienceAndTechnology...
+Loading source files for package WrapperClass...
+Loading source files for package Important_Programs...
+10 errors

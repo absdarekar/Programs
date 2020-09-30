@@ -1,0 +1,8 @@
+hello, this is Presentation Seminar of
+Computer Project first term exam 2 thousand forteen to fifteen,
+By, Atharva B. Darekar,
+standerd, ten,
+Roll number, eleven,
+Subject Teacher, Mister S. Hackke,
+Project Topic,  
+Types of Errors In Java Language.

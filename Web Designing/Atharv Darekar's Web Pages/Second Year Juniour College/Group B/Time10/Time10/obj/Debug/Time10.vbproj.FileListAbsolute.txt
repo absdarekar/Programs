@@ -1,0 +1,9 @@
+F:\Time10\Time10\bin\Time10.dll
+F:\Time10\Time10\bin\Time10.pdb
+F:\Time10\Time10\bin\Time10.xml
+F:\Time10\Time10\obj\Debug\ResolveAssemblyReference.cache
+F:\Time10\Time10\obj\Debug\Time10.Resources.resources
+F:\Time10\Time10\obj\Debug\Time10.vbproj.GenerateResource.Cache
+F:\Time10\Time10\obj\Debug\Time10.dll
+F:\Time10\Time10\obj\Debug\Time10.xml
+F:\Time10\Time10\obj\Debug\Time10.pdb

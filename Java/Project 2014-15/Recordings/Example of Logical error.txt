@@ -1,0 +1,8 @@
+Example Of Logical Error....,
+In a Java programming, the instruction is given as,
+for(a=1;a<=10;a=a+2),
+System.out.println(a);
+The output of the program is all odd numbers between 1 to ten,
+But, the user wants to print all even numbers between 1 to ten,
+Thus it should be,
+for(a=2;a<=10;a=a+2), to give the desired result.

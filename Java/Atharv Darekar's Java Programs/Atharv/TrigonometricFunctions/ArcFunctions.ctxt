@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=in
+comment0.target=double\ asin(double)
+comment1.params=in
+comment1.target=double\ acos(double)
+comment2.params=in
+comment2.target=double\ atan(double)
+numComments=3

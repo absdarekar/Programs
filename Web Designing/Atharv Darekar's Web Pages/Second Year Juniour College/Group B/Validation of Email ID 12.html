@@ -1,0 +1,28 @@
+﻿<html>
+	<head>
+	<script language="javascript">
+		function v_Form()
+			{
+				var x=form1.em.value;
+				var atpos=x.indexOf("@");
+				var dotpos=x.lastIndexOf(".");
+				if(atpos<1||(dotpos<atpos+2)||dotpos+2>=x.length)
+					{
+						alert("Not a Valid E-mail Address");
+						return false;
+					}
+				else
+					{
+						alert("Valid E-mail Address");
+					}
+			}
+	</script>
+	</head>
+	<body>
+		<h1>Check your E-mail Address</h1><br>
+		<form name="form1" onsubmit="return v_Form()" method="post">
+			Email:<input type="text" name="em">
+			<input type="submit" value"Submit">
+		</form>
+	</body>
+</html>

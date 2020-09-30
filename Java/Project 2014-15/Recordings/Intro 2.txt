@@ -1,0 +1,4 @@
+Types of error ......,
+Syntax Error,
+Logical Error, and,
+Run Time Error.

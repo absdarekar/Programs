@@ -1,0 +1,2 @@
+Run Time Error..,
+Even after errors are removed and the program is compiled, it does not mean that the program will produce the result. These may be some other mistake other than syntax error and logical error which come in the way of execution, know as Run time errors. These errors may occur due to dividing a number by zero, or to find the root of negative numbers, else wrong input by console etc.

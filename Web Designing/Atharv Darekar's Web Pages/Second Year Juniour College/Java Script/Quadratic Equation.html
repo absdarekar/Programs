@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Quadratic Equation</title>
+		<script language="javascript">
+			function quadratic_equation(a,b,c)
+			{
+				var r1=0,r2=0;
+				r1=(-b+Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
+				r2=(-b-Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
+				alert("The roots of given quadratic equation are"+"\n"+r1+"\n"+r2);
+			}
+		</script>
+	</head>
+	<body>
+		<h1><center>Fill the fields with real numbers</center></h1><br>
+		<form name="qe" method="post">
+		<input type="test" name="a" size="1">x<sup>2</sup>+(<input type="test" name="b" size="1">)x+(<input type="test" name="c" size="1">)<br>
+		<input type="button" value="Calculate" onClick="quadratic_equation(qe.a.value,qe.b.value,qe.c.value)">		
+		</form>
+	</body>
+</html>

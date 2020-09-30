@@ -1,0 +1,6 @@
+Example Of Run Time Error.,
+The expression a=b+c/d,
+If the value of d=0, then the result will come to an infinite, which is a run time error.
+The expression a=Math.sqrt(a),  
+If the value of a= minus1, then the result will come NaN, as square root of negative numbers is not defined. Hence, it is a run time error. The expression a=A.nextInt(),
+ is to accept a Integer value from the console, but if the console gives input such as decimal number, character ,or string the compiler will show run time error.
