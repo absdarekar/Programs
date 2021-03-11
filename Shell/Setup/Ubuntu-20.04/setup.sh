@@ -89,9 +89,12 @@ sudo apt install hunspell -y
 sudo apt install hunspell-es -y
 sudo apt install hunspell-hi -y
 
-# install Chromium
+# install Chrome
 
-snap install chromium
+wget "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+sudo dpkg --install google-chrome-stable_current_amd64.deb
+sudo apt-get -f install -y
+sudo dpkg --configure -a
 
 # install GNOME Shell integration extension's native host connector
 
