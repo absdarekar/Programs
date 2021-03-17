@@ -3,9 +3,10 @@
 # Shell script to setup Atharv Darekar's Ubuntu 20.04 LTS Environment
 # author: Atharv Darekar
 
-# Enable Universe repository and update the system
+# Enables universe repository and download package information from all configured sources
 
 echo "1 of 29"
+echo "Enable universe repository and update package information"
 sudo add-apt-repository universe && sudo apt-get update
 
 # install curl
@@ -63,7 +64,7 @@ pip3 install PyQt5 && pip3 install pyqt5-tools && pip3 install PyQtWebEngine
 # install Qt 5 Designer
 
 echo "10 of 29"
-echo "Installing Qt Creator"
+echo "Installing Qt 5 Designer"
 sudo apt install qtcreator -y
 
 # install GNU Octave and octave-symbolic package
@@ -221,4 +222,6 @@ sudo dpkg --configure -a
 
 echo "29 of 29"
 echo "Uninstalling pre installed games"
-sudo apt-get purge aisleriot gnome-sudoku gnome-mahjongg gnome-mines -y
+sudo apt-get autoremove aisleriot gnome-sudoku gnome-mahjongg gnome-mines -y
+
+echo "Done"
