@@ -4,7 +4,8 @@
 
 # "SECTION 1.1"
 # Syntax: awk 'PATTERN {ACTION}' FILE
-FILE=~/Training/Shell/Basics/holdings.data
+
+FILE=$(dirname $0)/holdings.data
 awk '{print $0}' $FILE # default pattern is match every line, $0 prints the entire line
 awk '$3~/[$]/' $FILE # default action is to print every line with the match
 
@@ -22,9 +23,9 @@ awk '$3~/[$]/{printf("You hold %d shares in %-4s of worth %s/- each\n",$2,$1,$3)
 FLAG=$(awk '$1=="T"{print 1}' $FILE)
 if [ $FLAG -eq "1" ]
 then
-	echo "Your are a share holder of AT\&T Inc."
+	echo "Your are a share holder of AT&T Inc."
 else
-	echo "Your are not a share holder of AT\&T Inc."
+	echo "Your are not a share holder of AT&T Inc."
 fi
 # Syntax for regular expressions to match pattern:
 #	field ~ /regex/
