@@ -3,8 +3,7 @@
 # "The Awk Programming Language by Alfred Aho, Brian Kernighan and Peter Weinberger"
 
 # "SECTION 1.1"
-
-# Syntax: awk 'PATTERN  { ACTION }' FILE
+# Syntax: awk 'PATTERN {ACTION}' FILE
 FILE=~/Training/Shell/Basics/holdings.data
 awk '{print $0}' $FILE # default pattern is match every line, $0 prints the entire line
 awk '$3~/[$]/' $FILE # default action is to print every line with the match
@@ -14,12 +13,19 @@ awk '{print $1,$3}' $FILE # comma is a seperator
 awk '{print NF,$NF}' $FILE # NF, $NF number of fields in a line, last field in a line
 awk '{print $2+$2}' $FILE  # awk supports arithmetic operations +,-,*,/,^
 awk '{print NR}' $FILE # NR current row number
-awk '{print "You hold",$2,"shares in",$1,"of worth",$3,"/-" }' $FILE # add strings
+awk '{print "You hold",$2,"shares in",$1,"of worth",$3,"/- each"}' $FILE # add strings
 
 # "SECTION 1.3"
-awk '$3~/[$]/{printf("You hold %d shares in %-4s of worth %s/-\n",$2,$1,$3)}' $FILE # formating
+awk '$3~/[$]/{printf("You hold %d shares in %-4s of worth %s/- each\n",$2,$1,$3)}' $FILE # formating
 
-# "NOTE: regex in awk"
+# "SECTION 1.4"
+FLAG=$(awk '$1=="T"{print 1}' $FILE)
+if [ $FLAG -eq "1" ]
+then
+	echo "Your are a share holder of AT\&T Inc."
+else
+	echo "Your are not a share holder of AT\&T Inc."
+fi
 # Syntax for regular expressions to match pattern:
 #	field ~ /regex/
 # to invert the matching pattern:
@@ -48,3 +54,8 @@ awk '$3~/[$]/{printf("You hold %d shares in %-4s of worth %s/-\n",$2,$1,$3)}' $F
 #	{n}	modifies the preceding set to mean exactly n times
 #	{n,}	modifies the preceding set to mean n or more times
 #	{n,m}	modifies the preceding set to mean between n and m times
+
+# "SECTION 1.5"
+# Syntax for substituting a pattern:
+#	sub(/PATTERN/,REPLACE);
+awk '$3~/[$]/{sub(/[$]/,"");printf("Your stake in %-4s is $%.2f/-\n",$1,$3*$2)}' $FILE
