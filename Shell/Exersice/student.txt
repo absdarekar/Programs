@@ -1,0 +1,5 @@
+RollNo|Name|Marks1|Marks2|Marks3
+123|Raghu|80|90|60
+342|Maya|45|78|82
+561|Gita|56|71|89
+480|Mohan|71|90|89
