@@ -1,9 +1,0 @@
-F:\Calculator8\Calculator8\bin\Calculator8.dll
-F:\Calculator8\Calculator8\bin\Calculator8.pdb
-F:\Calculator8\Calculator8\bin\Calculator8.xml
-F:\Calculator8\Calculator8\obj\Debug\ResolveAssemblyReference.cache
-F:\Calculator8\Calculator8\obj\Debug\Calculator8.Resources.resources
-F:\Calculator8\Calculator8\obj\Debug\Calculator8.vbproj.GenerateResource.Cache
-F:\Calculator8\Calculator8\obj\Debug\Calculator8.dll
-F:\Calculator8\Calculator8\obj\Debug\Calculator8.xml
-F:\Calculator8\Calculator8\obj\Debug\Calculator8.pdb
