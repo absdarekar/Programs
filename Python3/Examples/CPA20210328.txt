@@ -1,0 +1,129 @@
+Create a class Movie with the below attributes:
+movie_id of type Number
+movie_name of type String
+ticket_cost of type Number represents the ticket cost category of type String.
+
+Create the __init__ method which takes movie_id, movie_name, ticket_cost as
+parameters in the given sequence. The method should set the value of attributes
+to parameter values. Attribute category should have default value of “Default”.
+
+Create a method inside the Movie class with the name assign Price_category.
+This method assigns the value to the category attribute of the Movie based on
+the below criteria.
+
+If the cost of the ticket is greater than 0 and less than 150, then category
+will be General.
+
+If the cost of the ticket is greater than ad equal to 150, and less than 250
+then the category will be Silver.
+
+If the cost of ticket is greater than and equal to 250 and less than 350,
+ten category will be Gold.
+
+If the cost of the ticket is greater than and equal to 350, then the category
+will be Platinum.
+
+Create another class Movie_Ticket with the below attributes:
+customer_name of type String represents the name of the Person who has requested
+for the booking.
+movie_name of type String represents the name of the Movie the Ticket is booked
+for.
+viewerCount of type Number represents the count of viewers.
+totalTicketCost of type Number represents the total cost of ticket.
+
+Create the __init__ method which takes all parameters in the above sequence.
+Create a method getCategoryWiseCount which is not a method of any class.
+The method should take as argument a list of Movie objects and return a
+dictionary consisting of category:countOfMovies as key:value pairs where
+category represents the category of a Movie and countOfMovies represents
+the count of Movies of that category calculated from the Movie List passed
+as argument after assigning them to their respective category.
+
+Create a method bookMovieTicket which is not a method of any class.
+This method will take as argument a list of Movie objects and customer name,
+movie name and the count of viewers. Method will return the Movie_Ticket
+created will find the Movie object from the list passed as first argument
+having the name equal to the movie name passed as the third argument and find
+the ticket_cost of the Movie.
+Method will calculate the totalTicketCost by using the formula
+totalTicketCost=ticket_cost*viewer_count. Method will finally create and
+return the Movie_Ticket object with the values passed as argument for customer
+name, movie name, viewer count and the total ticket cost calculated. If the
+movie with the movie name passed as argument is not found in the Movie list
+passed as argument, method returns None.
+
+Note: All string search should be case insensitive.
+
+Instructions to write main section of code.
+
+a. You would require to write the main section completely, hence please follow
+the below instructions for the same.
+
+b. You would require to write the main program which is inline to the “sample
+input description section” mentioned below and to read the data in the same
+sequence.
+
+c. Create the respective objects (Movie and Movie_Ticket) with the given
+sequence of arguments to fulfill the __init__ method requirement defined in
+the respective classes referring to the below instructions.
+Input the number of Movie objects that needs to be created.
+Create a Movie object after reading the data related to it and add the object to
+the list of movie objects which will be provided to the methods
+getCategoryWiseCount and bookMovieTicket. This point repeats for the number of
+Movie objects to be created that is given in the first line of input point #c.1
+
+d. Read a string to represent the customer name to be passed as argument to the
+method bookMovieTicket.
+
+e. Read a String to represent the Movie name to be passed as argument to the
+method bookMovieTicket.
+
+f. Read a number representing the count of viewers to be passed as argument to
+the method bookMovieTicket.
+
+g. Call the method getCategoryWiseCount method defined above from the main
+section by passing the list created in point #1.
+
+h. Display a message “Category wise ticket count.”
+
+i. Display the result value returned by the method getCategoryWiseCount as
+method in the method description.
+You may refer to the sample output for the clarity on the display format.
+
+j. Call the method bookMovieTicket defined above from the main section by
+passing the list created in point #1 and the values read in points #d, #e and
+#f respectively.
+
+k. Display the Customer name and the totalTicketCost of the Movie_Ticket object
+returned by the method bookMovieTicket.
+
+l. If the method bookMovieTicket returns None, print the message
+“Movie not Available.”
+
+Input / Output
+
+Input:
+
+4
+1
+Birds of Prey
+100
+2
+joker
+100
+3
+Suicide Squad
+350
+4
+Chemical Hearts
+100
+Ramesh
+Chemical Hearts
+5
+
+Output:
+
+Category wise ticket count:
+General:3
+Platinum:1
+Ramesh 500

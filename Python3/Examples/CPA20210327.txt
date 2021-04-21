@@ -1,0 +1,161 @@
+Create a class Document with below attributes:
+docId – int
+docName – String
+docDetails – String
+
+Where, docId represents the document id,
+docName represents the document name and
+docDetails represents the details of the document which is a string and can
+contain fields like author name, size of document and document date.
+
+The fields of document details i.e. docDetails can be in any order separated by
+comma.
+For example, it may be a string like: (Rohit, 4000KB, 28/01/2020) or
+(28/01/2020, Rohit, 4000KB) etc.
+
+Note: The date in document details string (if date is present) will always be
+in the format: DD/MM/YYYY
+
+Define the __init__ method to initialize the attributes in the above sequence.
+
+Create a class DocumentArchive with below attributes:
+archiveId – int
+documentList – list of type Document
+where, archiveId represents the id of the document archive object and
+documentList is a list of documents belonging to the archive.
+Define the __init__ method to initialize the attributes in the above sequence.
+
+Define two methods – findDateFromDocumentDetails and countDocumentsOfGivenType
+in DocumentArchive class.
+
+findDateFromDocumentDetails: This method will find the date from the document
+details i.e. docDetails field of each Document that is included in the list of
+Documents i.e. documentList belonging to the DocumentArchive.
+The date may or may not be present in the document details string. If present,
+date should be in format DD/MM/YYYY.
+If a date is found in the document details of the Document, the document id i.e
+docId and the date is to be formed into a tuple and included in a list. This
+documentList.
+The method will finally return the list of all such tuples containing the
+document id and the date.
+
+countDocumentsOfGivenType: This method will take a String as input parameter
+representing a documentType name.
+The method will return the count of Document objects from the list of documents
+belonging to the DocumentArchive whose type is same as the given document type
+name passed as input. If no document is found for the given type, value returned
+should be zero.
+
+The docName of a Document will have two parts and separated by a ‘.'(dot)
+character i.e. It will be in the format, docName.docType
+Please note, the part must not contain the ‘.'(dot) character.
+
+The type of a document is the string after the ‘.'(dot) character of the docName.
+For example: Design Document.docx, Effort_Estimation.xlsx etc. are ‘docx’ and
+‘xlsx’ respectively.
+
+These above two static methods should be called from the main section.
+Instructions to write main section of the code:
+
+a. You would require to write the main section completely, hence please follow
+the instructions for the same.
+
+b. You would require to write the min program which is inline to the “sample
+input description section”
+
+c. Create the respective objects (Document and DocumentArchive) with the given
+sequence of arguments to fulfill the __init__ method requirement defied in the
+respective classes referring to the below instructions.
+
+1. Create a list of Documents for the DocumentArchive’s attribute documetList.
+
+To create the list,
+
+i. First read the number of Documents you want to store in the list.
+
+ii. Create a Document obect after reading the data related to it and add the
+Document object to the list of Document objects to be created which will be
+provided to the DocumetArchive object. This point repeats for the number of
+Documet objects to be created (the umber read i the first line of input in
+point #c.1.i)
+
+2. Create DocumentArchive object by passing the following two arguments – a
+hard-coded archiveId and the documentList(which is created as mentioned in
+above point #c.1.ii). Please note, you can pass any integer value for archiveId
+and this input is NOT taken from user.
+
+3. Read a string representing the document type name to be supplied as argument
+to the countDocumetsOfGivenType method.
+
+4. Call the method findDateFromDocumentDetails. if the returned list of empty,
+there will not be any output. If the returned list is non-empty, then the
+list-items, data i.e document id and date to be processed.
+
+5. Call the method countDocumentsOfGivenType by passing the string read in
+point #3 above as input and print the output in the following format:
+Document count = 0
+
+Please refer to below sample input and output for more clarity on the inputs
+and format of output.
+You can use/refer the below given sample input and output to verify your solution.
+
+Sample input description:
+The first input taken in the main section is the number of Document objects to
+be added to the list of Documents.
+The next set of inputs are the,
+docId
+docName
+docDetails – for each Document object taken one after other and is repeated for
+number of document objects given in the first line of input
+The last line in the sample input represents the document type name to be
+supplied as argument to the countDocumentsOfGivenType method to get the count of
+documents having the matching document type.
+Input / Output
+Input:
+
+4
+101
+Sales.pptx
+10/02/2020, Rajesh, 5MB
+102
+Report.pptx
+Rohit, 2MB, 12/12/2019
+103
+Design Document.docx
+4038KB, 01/01/2020, Vijay
+104
+Test_Approach.docx
+385KB, Sujay, 28/03/2020
+docx
+
+Output:
+
+101 10/02/2020
+102 12/12/2019
+103 01/01/2020
+104 28/03/2020
+Document Count = 2
+
+Input:
+
+4
+101
+Sales.pptx
+10/02/2020, Rajesh, 5MB
+102
+Report.pptx
+Rohit, 2MB, 12/12/2019
+103
+Design Document.docx
+4038KB, 01/01/2020, Vijay
+104
+Test_Approach.docs
+385KB, Sujay
+doc
+
+Output:
+
+101 10/02/2020
+102 12/12/2019
+103 01/01/2020
+Document Count = 0
